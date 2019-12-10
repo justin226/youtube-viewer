@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Youtube video viewer
+    </title>
+  </head>
+  <body>
+    <input type="text" id="id">
+    <button id="go">
+    <iframe id="yt" style="display: none">
+      Cannot load video
+    </iframe>
+    <script>
+      document.getElementById("go").addEventListener("click", function(){
+        document.getElementById("yt").setAttribute("src", "https://youtube.com/embed/" + document.getElementById("id"));
+      });
+    </script>
+  </body>
+</html>
